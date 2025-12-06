@@ -60,7 +60,7 @@
 
 <header>
 <div class="section">
-    <img src="Access All Areas Logo.png" alt="access all areas logo" class="logo">
+    <img src="Logo.png" alt="access all areas logo" class="logo">
 
     <h1>Opening Every Door for Everyone</h1>
     <h2>Equipping disabled students to lead boldly, with confidence, clarity, and connection.</h2>
@@ -69,7 +69,7 @@
     <details>
         <summary>Follow us on Instagram</summary>
         <a href="https://www.instagram.com/sean_prenterr/" target="_blank">
-            <img src="Access All Areas Logo.png" alt="access all areas logo" class="insta-icon">
+            <img src="Logo.png" alt="access all areas logo" class="insta-icon">
         </a>
     </details>
 </div>
