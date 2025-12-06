@@ -59,23 +59,19 @@
 <body>
 
 <header>
-  <img src="Logo.png" alt="access all areas logo" class="logo" />
-  <h1>Opening Every Door for Everyone</h1>
-  <p>Equipping disabled students to lead boldly, with confidence, clarity, and connection.</p>
-
-  <div class="instagram-toggle" onclick="toggleInsta()">
-    <img src="Logo.png" alt="Instagram logo toggle" />
+<div class="instagram-toggle" onclick="toggleInsta()">
+  <span>📷 Instagram</span>
   </div>
   <p id="instaLink" class="hidden"><a href="https://www.instagram.com/sean_prenterr/" target="_blank">Visit Instagram</a></p>
 </header>
 
 <section>
   <h2>Who Are We</h2>
-  <img src="Picture1.png" alt="A group of disabled young people smiling for camera" class="image" />
+  <img src="Picture 1.png" alt="A group of disabled young people smiling for camera" class="image" />
   <p>Access All Areas (AAA) is a youth-led initiative dedicated to empowering disabled young people across Aotearoa New Zealand by partnering with schools. Founded by disabled youth, for disabled youth, AAA is grounded in lived experience and driven by a vision of inclusive leadership.</p>
 
   <h3>Mission Statement</h3>
-  <img src="Images2.webp" alt="A group of disabled students celebrating" class="image" />
+  <img src="Image 2.webp" alt="A group of disabled students celebrating" class="image" />
   <p>AAA empowers disabled youth to lead with confidence, clarity, and connection by fostering inclusive leadership and strong community ties.</p>
 
   <h3>Vision Statement</h3>
@@ -94,7 +90,7 @@
 
 <section>
   <h2>Why This Matters: A Snapshot of Urgent Need</h2>
-  <img src="Picture3.jpg" alt="student left out of circle" class="image" />
+  <img src="Picture 3.jpg" alt="student left out of circle" class="image" />
   <ul>
     <li>Nearly half of disabled students report unmet needs in education</li>
     <li>6 in 10 disabled students are bullied — one of the highest rates globally</li>
@@ -144,7 +140,7 @@
   <p><a href="https://www.asiamediacentre.org.nz/invisible-twice-the-struggles-of-asian-students-with-disabilities-in-nz-universit">Asian Students Article</a></p>
   <p><a href="https://www.otago.ac.nz/news/newsroom/disability-action-plan-launch-signifies-commitment-to-inclusivity">Disability Action Plan Launch</a></p>
   <p><a href="https://www.scoop.co.nz/stories/ED2504/S00023/disability-and-progress-relational-recoil-from-ais-silver-bullet.htm">Disability & AI</a></p>
-  <img src="Picture26.jpg" alt="robot hand reaching for human hand" class="image" />
+  <img src="picture 26.webp" alt="robot hand reaching for human hand" class="image" />
   <p><a href="https://auckland.scoop.co.nz/2024/10/underserved-communities-unite-to-create-the-inclusive-code-a-tool-to-accelerate-inclusivity-and-representation-in-nz/">Inclusive Code Article</a></p>
   <img src="Picture23.png" alt="image of cartoon hands pointing" class="image" />
 </section>
