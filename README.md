@@ -59,22 +59,25 @@
 <body>
 
 <header>
-<div class="section">
-    <img src="Logo.png" alt="access all areas logo" class="logo">
+<header>
+  <div class="section">
+    <!-- Updated logo -->
+    <img src="Access All Areas Logo.png" alt="access all areas logo" class="logo">
 
     <h1>Opening Every Door for Everyone</h1>
     <h2>Equipping disabled students to lead boldly, with confidence, clarity, and connection.</h2>
 
     <!-- Instagram Toggle -->
     <details>
-        <summary>Follow us on Instagram</summary>
-        <a href="https://www.instagram.com/sean_prenterr/" target="_blank">
-            <img src="Logo.png" alt="access all areas logo" class="insta-icon">
-        </a>
+      <summary>Follow us on Instagram</summary>
+      <a href="https://www.instagram.com/sean_prenterr/" target="_blank">
+        <!-- Updated Instagram icon to use same logo -->
+        <img src="Access All Areas Logo.png" alt="access all areas logo" class="insta-icon">
+      </a>
     </details>
-</div>
+  </div>
 </header>
-
+</header>
 <section>
   <h2>Who Are We</h2>
   <img src="Picture 1.png" alt="A group of disabled young people smiling for camera" class="image" />
