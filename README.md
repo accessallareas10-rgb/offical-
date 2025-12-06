@@ -1,169 +1,248 @@
-# Official Site
-This is the starting point for my GitHub Pages site.
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Access All Areas — Opening Every Door for Everyone</title>
-  <meta name="description" content="Access All Areas empowers disabled students to lead with confidence, clarity, and connection." />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
-  <style>
-    /* --- Variables and base styles --- */
-    :root {
-      --bg: #0f172a;
-      --panel: #111827;
-      --text: #e5e7eb;
-      --muted: #cbd5e1;
-      --accent: #22c55e;
-      --accent-2: #06b6d4;
-      --link: #60a5fa;
-      --border: #1f2937;
-      --card: #0b1220;
-      --focus: #fde68a;
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Access All Areas</title>
+
+<!-- Merriweather Font -->
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+
+<style>
+    body {
+        font-family: 'Merriweather', serif;
+        background-color: #F9F6F0;
+        color: #1B3B2F;
+        margin: 0;
+        padding: 0;
+        line-height: 1.7;
     }
-    * { box-sizing: border-box; }
-    body { margin:0; font-family: Inter, sans-serif; background: var(--bg); color: var(--text); }
-    a { color: var(--link); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    img { max-width: 100%; height: auto; border-radius: 8px; }
-    .container { max-width: 1100px; margin: 0 auto; padding: 24px; }
-    header { border-bottom: 1px solid var(--border); }
-    .nav { display:flex; justify-content:space-between; align-items:center; padding:16px 24px; }
-    .brand { display:flex; align-items:center; gap:10px; }
-    .brand img { width:40px; height:40px; }
-    .btn { padding:10px 14px; border-radius:8px; font-weight:600; border:1px solid var(--border); }
-    .btn-primary { background:var(--accent); color:#062815; }
-    .btn-outline { background:transparent; color:var(--text); }
-    .hero { text-align:center; padding:40px 24px; }
-    .hero h2 { font-size:clamp(28px,3.5vw,44px); margin:8px 0 12px; }
-    .section { padding:40px 0; border-top:1px solid var(--border); }
-    .grid { display:grid; grid-template-columns:repeat(12,1fr); gap:18px; }
-    .col-4 { grid-column:span 4; }
-    .col-6 { grid-column:span 6; }
-    .col-8 { grid-column:span 8; }
-    .col-12 { grid-column:span 12; }
-    @media(max-width:900px){ .col-4,.col-6,.col-8{grid-column:span 12;} }
-    .card { background:var(--card); border:1px solid var(--border); border-radius:14px; padding:18px; }
-    footer { padding:28px 24px; border-top:1px solid var(--border); color:var(--muted); }
-    :focus-visible { outline:3px solid var(--focus); outline-offset:3px; }
-  </style>
+
+    header, section {
+        padding: 40px 20px;
+        max-width: 1100px;
+        margin: auto;
+    }
+
+    h1, h2, h3 {
+        color: #1B3B2F;
+    }
+
+    .logo {
+        width: 180px;
+    }
+
+    .section-img {
+        width: 100%;
+        border-radius: 12px;
+        margin: 20px 0;
+    }
+
+    /* YouTube Responsive Embed */
+    .video-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden;
+        border-radius: 12px;
+        margin: 25px 0;
+    }
+
+    .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .cta-button {
+        background-color: #C4A35A;
+        color: #1B3B2F;
+        padding: 15px 25px;
+        font-size: 20px;
+        border-radius: 10px;
+        text-decoration: none;
+        display: inline-block;
+        margin-top: 20px;
+    }
+
+    /* Instagram Toggle */
+    details {
+        margin-top: 20px;
+    }
+
+    .insta-icon {
+        width: 40px;
+        vertical-align: middle;
+    }
+
+</style>
 </head>
+
 <body>
-  <header>
-    <div class="nav container">
-      <div class="brand">
-        <!-- Logo -->
-        <img src="Logo.png" alt="Access All Areas logo" />
-        <h1>Access All Areas</h1>
-      </div>
-      <nav>
-        <a class="btn btn-outline" href="#about">About</a>
-        <a class="btn btn-outline" href="#why">Why</a>
-        <a class="btn btn-outline" href="#offer">Workshops</a>
-        <a class="btn btn-outline" href="#themes">Themes</a>
-        <a class="btn btn-outline" href="#whakapapa">Whakapapa</a>
-        <a class="btn btn-outline" href="#media">Media</a>
-        <a class="btn btn-primary" href="#join">Join</a>
-      </nav>
+
+<header>
+    <img src="Access All Areas Logo.png" alt="access all areas logo" class="logo">
+
+    <h1>Opening Every Door for Everyone</h1>
+    <p>Equipping disabled students to lead boldly, with confidence, clarity, and connection.</p>
+
+    <details>
+        <summary>
+            <img src="instagram.png" class="insta-icon"> Follow us on Instagram
+        </summary>
+        <a href="https://www.instagram.com/sean_prenterr/" target="_blank">Click here</a>
+    </details>
+</header>
+
+
+<section>
+    <h2>Who Are We</h2>
+    <p>
+        Access All Areas (AAA) is a youth-led initiative dedicated to empowering disabled young 
+        people across Aotearoa New Zealand by partnering with schools. Founded by disabled youth, 
+        for disabled youth, AAA is grounded in lived experience and driven by a vision of inclusive leadership.
+    </p>
+
+    <img src="Picture 1.png" alt="A group of disabled young people smiling for camera" class="section-img">
+
+    <h3>Mission Statement</h3>
+    <p>
+        AAA empowers disabled youth to lead with confidence, clarity, and connection by fostering inclusive 
+        leadership and strong community ties.
+    </p>
+
+    <img src="Images 2.webp" alt="A group of disabled students celebrating" class="section-img">
+
+    <h3>Vision Statement</h3>
+    <p>
+        We envision an Aotearoa where disabled youth are confident leaders, deeply connected to their 
+        communities, and empowered to shape a more inclusive future.
+    </p>
+
+    <!-- YOUTUBE EMBED #1 -->
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/EKBmK5kAcnc" frameborder="0" allowfullscreen></iframe>
     </div>
-    <section class="hero container">
-      <h2>Equipping disabled students to lead boldly</h2>
-      <p>Access All Areas partners with schools to build inclusive leadership grounded in lived experience.</p>
-      <div>
-        <a class="btn btn-primary" href="#join">Join the movement</a>
-      </div>
-    </section>
-  </header>
 
-  <main>
-    <!-- About -->
-    <section class="section" id="about">
-      <div class="container grid">
-        <div class="col-8 card">
-          <h3>Who we are</h3>
-          <p>Access All Areas (AAA) is a youth-led initiative empowering disabled young people across Aotearoa.</p>
-          <!-- About image -->
-          <img src="YOUR_ABOUT_IMAGE_HERE" alt="Disabled youth smiling together" />
-        </div>
-        <div class="col-4 card">
-          <h3>Vision</h3>
-          <p>We envision an Aotearoa where disabled youth are confident leaders.</p>
-        </div>
-      </div>
-    </section>
+    <img src="Picture10.jpg" alt="student using sign language" class="section-img">
+    <img src="Picture11.jpg" alt="students studying" class="section-img">
+    <img src="Picture12.jpg" alt="students talking" class="section-img">
+    <img src="Picture13.jpg" alt="student being taught" class="section-img">
 
-    <!-- Why -->
-    <section class="section" id="why">
-      <div class="container card">
-        <h3>Why this matters</h3>
-        <p>Disabled students face systemic barriers in education and employment.</p>
-      </div>
-    </section>
+    <a href="#join" class="cta-button">Join Now</a>
+</section>
 
-    <!-- Workshops -->
-    <section class="section" id="offer">
-      <div class="container grid">
-        <div class="col-8 card">
-          <h3>Our offer</h3>
-          <ul>
-            <li>Equip disabled students with confidence</li>
-            <li>Support identity development</li>
-            <li>Foster leadership and advocacy</li>
-          </ul>
-        </div>
-        <div class="col-4 card" id="themes">
-          <h3>Key themes</h3>
-          <ul>
-            <li>Shared experience</li>
-            <li>Friendships</li>
-            <li>Accessing support</li>
-          </ul>
-        </div>
-      </div>
-    </section>
 
-    <!-- Whakapapa -->
-    <section class="section" id="whakapapa">
-      <div class="container grid">
-        <div class="col-5 card">
-          <!-- Whakapapa image -->
-          <img src="YOUR_WHAKAPAPA_IMAGE_HERE" alt="Founder photo" />
-        </div>
-        <div class="col-7 card">
-          <h3>Our whakapapa</h3>
-          <p>Kia ora — I’m Sean, founder and head facilitator at AAA.</p>
-        </div>
-      </div>
-    </section>
+<section>
+    <h2>Why This Matters: A Snapshot of Urgent Need</h2>
 
-    <!-- Media -->
-    <section class="section" id="media">
-      <div class="container card">
-        <h3>Articles & Podcasts</h3>
-        <!-- Example media thumbnail -->
-        <img src="YOUR_MEDIA_IMAGE_HERE" alt="Article thumbnail" />
-      </div>
-    </section>
+    <img src="Picture 3.jpg" alt="student left out of circle" class="section-img">
 
-    <!-- Join -->
-    <section class="section" id="join">
-      <div class="container card">
-        <h3>Ready to join?</h3>
-        <p>Don’t miss the opportunity to change lives.</p>
-        <a class="btn btn-primary" href="mailto:YOUR_EMAIL_HERE">Email us</a>
-      </div>
-    </section>
-  </main>
+    <p>
+        In Aotearoa, many disabled young people are not being equipped with the support, tools, 
+        and self-understanding they need to thrive in school, work, and life.
+    </p>
 
-  <footer>
-    <div class="container">
-      <p>&copy; <span id="yr"></span> Access All Areas</p>
+    <ul>
+        <li>📚 Nearly half of disabled students report unmet needs in education</li>
+        <li>💔 6 in 10 disabled students are bullied — one of the highest rates globally</li>
+        <li>🎓 Disabled students are twice as likely to leave school with no qualifications</li>
+        <li>📉 Four times more likely to not be in education, employment, or training</li>
+        <li>💼 72% of unemployed disabled adults want to work</li>
+    </ul>
+
+    <p>
+        These outcomes are not inevitable — they result from environments that fail to affirm 
+        and empower disabled identities.
+    </p>
+</section>
+
+
+<section>
+    <h3>Student Voices</h3>
+
+    <p><strong>Isla:</strong> “I used to believe I wasn’t capable of much…”</p>
+    <img src="Picture7.jpg" alt="student with their head on their hands studying" class="section-img">
+
+    <p><strong>Kahu:</strong> “I kept pushing through like everything was fine…”</p>
+    <img src="Picture6.jpg" alt="Student studying looking stressed" class="section-img">
+
+    <p><strong>Amelia:</strong> “Whenever I tried to talk about being disabled…”</p>
+    <img src="Picture8.jpg" alt="student sitting lonely on steps" class="section-img">
+</section>
+
+
+<section id="join">
+    <h2>Our Offer</h2>
+
+    <h3>Disabled youth-led empowerment workshops</h3>
+
+    <h4>Individual Development</h4>
+    <ul>
+        <li>Identity development through storytelling and reflection</li>
+        <li>Fostering disability pride and leadership</li>
+        <li>Equipping students for academic and social environments</li>
+    </ul>
+
+    <img src="Picture15.jpg" alt="smiling students" class="section-img">
+
+    <h4>Peer and Community Connection</h4>
+    <img src="Picture17.jpg" alt="smiling students" class="section-img">
+
+    <h4>Ongoing Growth and Leadership</h4>
+    <p>Regular engagement with diverse disabled leaders.</p>
+
+    <h4>Systemic Impact</h4>
+    <p>Feedback on school access and inclusion directly from disabled youth.</p>
+</section>
+
+
+<section>
+    <h2>Meet Sean Prenter</h2>
+    <img src="Linkedin banner.jpg" alt="Sean Prenter banner image" class="section-img">
+
+    <!-- YOUTUBE EMBED #2 -->
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/wXBBoTr0kvU" frameborder="0" allowfullscreen></iframe>
     </div>
-  </footer>
 
-  <script>
-    document.getElementById('yr').textContent = new Date().getFullYear();
-  </script>
+    <p>
+        Kia ora, I’m Sean, the founder and facilitator at Access All Areas (AAA).  
+        I started AAA because I know what it’s like to navigate education and leadership as a disabled person...
+    </p>
+
+    <img src="Picture19.jpg" alt="wooden figure climbing stairs" class="section-img">
+    <img src="Picture20.jpg" alt="students sitting in circle on grass" class="section-img">
+</section>
+
+
+<section>
+    <h2>Articles</h2>
+
+    <ul>
+        <li><a href="https://www.asiamediacentre.org.nz/invisible-twice-the-struggles-of-asian-students-with-disabilities-in-nz-universit">Asian Students Article</a></li>
+        <li><a href="https://www.otago.ac.nz/news/newsroom/disability-action-plan-launch-signifies-commitment-to-inclusivity">Otago Disability Action Plan</a></li>
+        <li><a href="https://www.scoop.co.nz/stories/ED2504/S00023/disability-and-progress-relational-recoil-from-ais-silver-bullet.htm">AI & Disability Article</a></li>
+    </ul>
+
+    <img src="Picture26.jpg" alt="robot hand reaching for human hand" class="section-img">
+    <img src="Picture23.png" alt="image of cartoon hands pointing in different directions" class="section-img">
+</section>
+
+
+<section>
+    <h2>Podcasts</h2>
+
+    <ul>
+        <li><a href="https://nzpod.co.nz/podcast/baskets-of-knowledge/episode-112-following-your-heart-beat-to-make-a-ch">Baskets of Knowledge Podcast</a></li>
+        <li><a href="https://shows.acast.com/thatssochronic/episodes/sean-prenter-traumatic-brain-injury">That's So Chronic</a></li>
+    </ul>
+
+    <img src="Picture24.jpg" alt="podcast tile cartoon hosts" class="section-img">
+    <img src="Picture 25.jpg" alt="podcast tile with medical devices" class="section-img">
+</section>
+
 </body>
 </html>
