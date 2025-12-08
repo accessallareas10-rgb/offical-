@@ -1,167 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Access All Areas — Opening Every Door for Everyone</title>
-  <meta name="description" content="Access All Areas empowers disabled students to lead with confidence, clarity, and connection." />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
-  <style>
-    /* --- Variables and base styles --- */
-    :root {
-      --bg: #0f172a;
-      --panel: #111827;
-      --text: #e5e7eb;
-      --muted: #cbd5e1;
-      --accent: #22c55e;
-      --accent-2: #06b6d4;
-      --link: #60a5fa;
-      --border: #1f2937;
-      --card: #0b1220;
-      --focus: #fde68a;
-    }
-    * { box-sizing: border-box; }
-    body { margin:0; font-family: Inter, sans-serif; background: var(--bg); color: var(--text); }
-    a { color: var(--link); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    img { max-width: 100%; height: auto; border-radius: 8px; }
-    .container { max-width: 1100px; margin: 0 auto; padding: 24px; }
-    header { border-bottom: 1px solid var(--border); }
-    .nav { display:flex; justify-content:space-between; align-items:center; padding:16px 24px; }
-    .brand { display:flex; align-items:center; gap:10px; }
-    .brand img { width:40px; height:40px; }
-    .btn { padding:10px 14px; border-radius:8px; font-weight:600; border:1px solid var(--border); }
-    .btn-primary { background:var(--accent); color:#062815; }
-    .btn-outline { background:transparent; color:var(--text); }
-    .hero { text-align:center; padding:40px 24px; }
-    .hero h2 { font-size:clamp(28px,3.5vw,44px); margin:8px 0 12px; }
-    .section { padding:40px 0; border-top:1px solid var(--border); }
-    .grid { display:grid; grid-template-columns:repeat(12,1fr); gap:18px; }
-    .col-4 { grid-column:span 4; }
-    .col-6 { grid-column:span 6; }
-    .col-8 { grid-column:span 8; }
-    .col-12 { grid-column:span 12; }
-    @media(max-width:900px){ .col-4,.col-6,.col-8{grid-column:span 12;} }
-    .card { background:var(--card); border:1px solid var(--border); border-radius:14px; padding:18px; }
-    footer { padding:28px 24px; border-top:1px solid var(--border); color:var(--muted); }
-    :focus-visible { outline:3px solid var(--focus); outline-offset:3px; }
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Access All Areas</title>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+<style>
+ body {
+   font-family: 'Merriweather', serif;
+   background-color: #F9F6F0;
+   margin: 0;
+   padding: 0;
+   color: #1B3B2F;
+ }
+ header, section {
+   padding: 40px 20px;
+   max-width: 900px;
+   margin: auto;
+ }
+ h1, h2, h3 {
+   color: #1B3B2F;
+ }
+ .logo {
+   width: 180px;
+ }
+ .image {
+   width: 100%;
+   border-radius: 8px;
+   margin: 20px 0;
+ }
+ .cta {
+   background-color: #C4A35A;
+   padding: 12px 22px;
+   display: inline-block;
+   color: white;
+   text-decoration: none;
+   border-radius: 6px;
+   margin-top: 20px;
+ }
+ .instagram-toggle img {
+   width: 40px;
+   cursor: pointer;
+ }
+ .hidden {
+   display: none;
+ }
+ .accent {
+   color: #A35D3D;
+ }
+</style>
+<script>
+ function toggleInsta() {
+   var link = document.getElementById("instaLink");
+   link.classList.toggle("hidden");
+ }
+</script>
 </head>
 <body>
-  <header>
-    <div class="nav container">
-      <div class="brand">
-        <!-- Logo -->
-        <img src="Logo.png" alt="Access All Areas logo" />
-        <h1>Access All Areas</h1>
-      </div>
-      <nav>
-        <a class="btn btn-outline" href="#about">About</a>
-        <a class="btn btn-outline" href="#why">Why</a>
-        <a class="btn btn-outline" href="#offer">Workshops</a>
-        <a class="btn btn-outline" href="#themes">Themes</a>
-        <a class="btn btn-outline" href="#whakapapa">Whakapapa</a>
-        <a class="btn btn-outline" href="#media">Media</a>
-        <a class="btn btn-primary" href="#join">Join</a>
-      </nav>
-    </div>
-    <section class="hero container">
-      <h2>Equipping disabled students to lead boldly</h2>
-      <p>Access All Areas partners with schools to build inclusive leadership grounded in lived experience.</p>
-      <div>
-        <a class="btn btn-primary" href="#join">Join the movement</a>
-      </div>
-    </section>
-  </header>
+<header>
+  <div class="section">
+    <!-- Updated logo -->
+    <img src="Logo.png" alt="access all areas logo" class="logo">
 
-  <main>
-    <!-- About -->
-    <section class="section" id="about">
-      <div class="container grid">
-        <div class="col-8 card">
-          <h3>Who we are</h3>
-          <p>Access All Areas (AAA) is a youth-led initiative empowering disabled young people across Aotearoa.</p>
-          <!-- About image -->
-          <img src="YOUR_ABOUT_IMAGE_HERE" alt="Disabled youth smiling together" />
-        </div>
-        <div class="col-4 card">
-          <h3>Vision</h3>
-          <p>We envision an Aotearoa where disabled youth are confident leaders.</p>
-        </div>
-      </div>
-    </section>
+    <h1>Opening Every Door for Everyone</h1>
+    <h2>Equipping disabled students to lead boldly, with confidence, clarity, and connection.</h2>
 
-    <!-- Why -->
-    <section class="section" id="why">
-      <div class="container card">
-        <h3>Why this matters</h3>
-        <p>Disabled students face systemic barriers in education and employment.</p>
-      </div>
-    </section>
+    <!-- Instagram Toggle -->
+    <details>
+      <summary>Follow us on Instagram</summary>
+      <a href="https://www.instagram.com/sean_prenterr/" target="_blank">
+        <!-- Updated Instagram icon to use same logo -->
+        <img src="Logo.png" alt="access all areas logo" class="insta-icon">
+      </a>
+    </details>
+  </div>
+</header>
+<section>
+  <h2>Who Are We</h2>
+  <img src="Picture 1.png" alt="A group of disabled young people smiling for camera" class="image" />
+  <p>Access All Areas (AAA) is a youth-led initiative dedicated to empowering disabled young people across Aotearoa New Zealand by partnering with schools. Founded by disabled youth, for disabled youth, AAA is grounded in lived experience and driven by a vision of inclusive leadership.</p>
 
-    <!-- Workshops -->
-    <section class="section" id="offer">
-      <div class="container grid">
-        <div class="col-8 card">
-          <h3>Our offer</h3>
-          <ul>
-            <li>Equip disabled students with confidence</li>
-            <li>Support identity development</li>
-            <li>Foster leadership and advocacy</li>
-          </ul>
-        </div>
-        <div class="col-4 card" id="themes">
-          <h3>Key themes</h3>
-          <ul>
-            <li>Shared experience</li>
-            <li>Friendships</li>
-            <li>Accessing support</li>
-          </ul>
-        </div>
-      </div>
-    </section>
+  <h3>Mission Statement</h3>
+  <img src="Image 2.webp" alt="A group of disabled students celebrating" class="image" />
+  <p>AAA empowers disabled youth to lead with confidence, clarity, and connection by fostering inclusive leadership and strong community ties.</p>
 
-    <!-- Whakapapa -->
-    <section class="section" id="whakapapa">
-      <div class="container grid">
-        <div class="col-5 card">
-          <!-- Whakapapa image -->
-          <img src="YOUR_WHAKAPAPA_IMAGE_HERE" alt="Founder photo" />
-        </div>
-        <div class="col-7 card">
-          <h3>Our whakapapa</h3>
-          <p>Kia ora — I’m Sean, founder and head facilitator at AAA.</p>
-        </div>
-      </div>
-    </section>
+  <h3>Vision Statement</h3>
+  <p>We envision an Aotearoa where disabled youth are confident leaders, deeply connected to their communities, and empowered to shape a more inclusive future.</p>
+  <p><a href="https://www.youtube.com/shorts/EKBmK5kAcnc" target="_blank">Watch our video</a></p>
+</section>
 
-    <!-- Media -->
-    <section class="section" id="media">
-      <div class="container card">
-        <h3>Articles & Podcasts</h3>
-        <!-- Example media thumbnail -->
-        <img src="YOUR_MEDIA_IMAGE_HERE" alt="Article thumbnail" />
-      </div>
-    </section>
+<section>
+  <img src="Picture10.jpg" alt="student using sign language" class="image" />
+  <img src="Picture11.jpg" alt="students studying" class="image" />
+  <img src="Picture12.jpg" alt="students talking" class="image" />
+  <img src="Picture13.jpg" alt="student being taught" class="image" />
 
-    <!-- Join -->
-    <section class="section" id="join">
-      <div class="container card">
-        <h3>Ready to join?</h3>
-        <p>Don’t miss the opportunity to change lives.</p>
-        <a class="btn btn-primary" href="mailto:YOUR_EMAIL_HERE">Email us</a>
-      </div>
-    </section>
-  </main>
+  <a class="cta" href="#join">Join Now</a>
+</section>
 
-  <footer>
-    <div class="container">
-      <p>&copy; <span id="yr"></span> Access All Areas</p>
-    </div>
-  </footer>
+<section>
+  <h2>Why This Matters: A Snapshot of Urgent Need</h2>
+  <img src="Picture 3.jpg" alt="student left out of circle" class="image" />
+  <ul>
+    <li>Nearly half of disabled students report unmet needs in education</li>
+    <li>6 in 10 disabled students are bullied — one of the highest rates globally</li>
+    <li>Disabled students are twice as likely to leave school with no qualifications</li>
+    <li>Four times more likely to not be in education, employment, or training</li>
+    <li>Yet 72% of unemployed disabled adults want to work</li>
+  </ul>
 
-  <script>
-    document.getElementById('yr').textContent = new Date().getFullYear();
-  </script>
+  <p>These outcomes are the result of environments that often fail to affirm and empower disabled identities.</p>
+
+  <h3>Student Voices</h3>
+  <p><strong>Isla:</strong> "I used to believe I wasn’t capable of much, so I stopped dreaming big..."</p>
+  <img src="Picture7.jpg" alt="student with their head on their hands studying" class="image" />
+
+  <p><strong>Kahu:</strong> "I kept pushing through like everything was fine because I didn’t want to be seen as the 'difficult' one..."</p>
+  <img src="Picture6.jpg" alt="Student studying looking stressed" class="image" />
+
+  <p><strong>Amelia:</strong> "Whenever I tried to talk about being disabled, people got awkward..."</p>
+  <img src="Picture8.jpg" alt="student sitting lonely on steps" class="image" />
+</section>
+
+<section>
+  <h2>Our Offer</h2>
+  <h3>Individual Development</h3>
+  <img src="Picture15.jpg" alt="smiling students" class="image" />
+  <p>Support identity development, foster leadership and disability pride, strengthen self-advocacy, and help disabled students envision an empowered future.</p>
+
+  <h3>Peer and Community Connection</h3>
+  <img src="Picture17.jpg" alt="smiling students" class="image" />
+  <p>Stronger peer networks, belonging, mutual support, and shared disability experience.</p>
+
+  <h3>Ongoing Growth & Leadership</h3>
+  <p>Regular engagement with disabled leaders and increased visibility of disability leadership in schools.</p>
+</section>
+
+<section>
+  <h2>Meet Sean Prenter</h2>
+  <img src="Linkedin banner.jpg" alt="Sean Prenter founder banner" class="image" />
+  <p><a href="https://www.youtube.com/shorts/wXBBoTr0kvU" target="_blank">Watch introduction video</a></p>
+  <p>Kia ora, I’m Sean, the founder of Access All Areas...</p>
+  <img src="Picture19.jpg" alt="wooden figure climbing stairs" class="image" />
+  <img src="Picture20.jpg" alt="students sitting in circle on grass" class="image" />
+</section>
+
+<section>
+  <h2>Articles</h2>
+  <p><a href="https://www.asiamediacentre.org.nz/invisible-twice-the-struggles-of-asian-students-with-disabilities-in-nz-universit">Asian Students Article</a></p>
+  <p><a href="https://www.otago.ac.nz/news/newsroom/disability-action-plan-launch-signifies-commitment-to-inclusivity">Disability Action Plan Launch</a></p>
+  <p><a href="https://www.scoop.co.nz/stories/ED2504/S00023/disability-and-progress-relational-recoil-from-ais-silver-bullet.htm">Disability & AI</a></p>
+  <img src="picture 26.webp" alt="robot hand reaching for human hand" class="image" />
+  <p><a href="https://auckland.scoop.co.nz/2024/10/underserved-communities-unite-to-create-the-inclusive-code-a-tool-to-accelerate-inclusivity-and-representation-in-nz/">Inclusive Code Article</a></p>
+  <img src="Picture23.png" alt="image of cartoon hands pointing" class="image" />
+</section>
+
+<section>
+  <h2>Podcasts</h2>
+  <p><a href="https://nzpod.co.nz/podcast/baskets-of-knowledge/episode-112-following-your-heart-beat-to-make-a-ch">Baskets of Knowledge Podcast</a></p>
+  <img src="Picture24.jpg" alt="podcast tile of cartoon hosts" class="image" />
+  <p><a href="https://shows.acast.com/thatssochronic/episodes/sean-prenter-traumatic-brain-injury">That's So Chronic Podcast</a></p>
+  <img src="Picture25.jpg" alt="image of podcast tile with medical devices" class="image" />
+</section>
+
 </body>
 </html>
