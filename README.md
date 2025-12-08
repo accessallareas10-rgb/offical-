@@ -57,8 +57,6 @@
 </script>
 </head>
 <body>
-
-<header>
 <header>
   <div class="section">
     <!-- Updated logo -->
@@ -76,7 +74,6 @@
       </a>
     </details>
   </div>
-</header>
 </header>
 <section>
   <h2>Who Are We</h2>
