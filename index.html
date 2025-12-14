@@ -4,97 +4,115 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Access All Areas</title>
-
 <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
-
 <style>
-body {
-  font-family: 'Merriweather', serif;
-  background-color: #F9F6F0;
-  margin: 0;
-  padding: 0;
-  color: #1B3B2F;
-}
-
-header, section {
-  padding: 40px 20px;
-  max-width: 900px;
-  margin: auto;
-}
-
-h1, h2, h3 {
-  color: #1B3B2F;
-}
-
-.logo {
-  width: 180px;
-}
-
-.image {
-  width: 100%;
-  border-radius: 8px;
-  margin: 20px 0;
-}
-
-.small-image {
-  width: 100%;
-  max-width: 160px;
-  margin: auto;
-  display: block;
-}
-
-.cta {
-  background-color: #C4A35A;
-  padding: 12px 22px;
-  display: inline-block;
-  color: white;
-  text-decoration: none;
-  border-radius: 6px;
-  margin-top: 20px;
-  cursor: pointer;
-}
-
-.grid-2 {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 40px;
-}
-
-.grid-4 {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-}
-
-.center {
-  text-align: center;
-}
-
-iframe {
-  width: 100%;
-  height: 315px;
-  border-radius: 8px;
-}
-
-.email-box {
-  display: none;
-  margin-top: 20px;
-}
-
-.email-box input {
-  padding: 10px;
-  width: 70%;
-}
-
-.email-box button {
-  padding: 10px 16px;
-  background-color: #C4A35A;
-  color: white;
-  border: none;
-}
+  body {
+    font-family: 'Merriweather', serif;
+    background-color: #F9F6F0;
+    margin: 0;
+    padding: 0;
+    color: #1B3B2F;
+    line-height: 1.6;
+  }
+  header, section {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: auto;
+  }
+  h1, h2, h3 {
+    color: #1B3B2F;
+    margin-bottom: 20px;
+  }
+  .logo {
+    width: 180px;
+  }
+  .image {
+    width: 100%;
+    border-radius: 8px;
+    margin: 20px 0;
+  }
+  .small-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 5px;
+  }
+  .cta {
+    background-color: #C4A35A;
+    padding: 12px 22px;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  .instagram-toggle img {
+    width: 40px;
+    cursor: pointer;
+  }
+  .hidden {
+    display: none;
+  }
+  .accent {
+    color: #A35D3D;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .column {
+    flex: 1;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+  }
+  iframe {
+    width: 100%;
+    height: 200px;
+    border: none;
+    border-radius: 8px;
+  }
+  form input[type="email"] {
+    padding: 10px;
+    width: 250px;
+    margin-right: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+  /* Mobile readability */
+  @media(max-width: 768px) {
+    .row {
+      flex-direction: column;
+    }
+    .column {
+      min-width: 100%;
+    }
+  }
+  .highlight-text {
+    font-size: 1.3em;
+    font-weight: bold;
+  }
+  .align-half {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 </style>
+<script>
+  function toggleInsta() {
+    var link = document.getElementById("instaLink");
+    link.classList.toggle("hidden");
+  }
+  function sendEmail(form) {
+    const email = form.email.value;
+    window.location.href = `mailto:accessallareas10@gmail.com?subject=Support AAA&body=Please add me to your mailing list: ${email}`;
+    return false;
+  }
+</script>
 </head>
-
 <body>
 
 <header>
@@ -102,168 +120,139 @@ iframe {
   <h1>Opening Every Door for Everyone</h1>
   <h2>Equipping disabled students to lead boldly, with confidence, clarity, and connection.</h2>
 
-  <details>
-    <summary>Follow us on Instagram</summary>
+  <div class="instagram-toggle">
     <a href="https://www.instagram.com/sean_prenterr/" target="_blank">
-      <img src="Logo.png" alt="access all areas logo" class="logo">
+      <img src="Logo.png" alt="Follow on Instagram">
     </a>
-  </details>
+  </div>
 </header>
 
 <section>
-<h2>Who Are We</h2>
-
-<div class="grid-2">
-  <div>
-    <p>
-      Access All Areas (AAA) is a youth-led initiative dedicated to empowering disabled young people across Aotearoa New Zealand by partnering with schools. Founded by disabled youth, for disabled youth, AAA is grounded in lived experience and driven by a vision of inclusive leadership.
-    </p>
-
-    <h3>Mission Statement</h3>
-    <p>
-      AAA empowers disabled youth to lead with confidence, clarity, and connection by fostering inclusive leadership and strong community ties.
-    </p>
-
-    <iframe src="https://www.youtube.com/embed/EKBmK5kAcnc" allowfullscreen></iframe>
+  <h2>Who Are We</h2>
+  <div class="row">
+    <div class="column">
+      <p>Access All Areas (AAA) is a youth-led initiative dedicated to empowering disabled young people across Aotearoa New Zealand by partnering with schools. Founded by disabled youth, for disabled youth, AAA is grounded in lived experience and driven by a vision of inclusive leadership.</p>
+      <img src="Image2.webp" alt="AAA students" class="image">
+      <h3>Vision Statement</h3>
+      <p>We envision an Aotearoa where disabled youth are confident leaders, deeply connected to their communities, and empowered to shape a more inclusive future.</p>
+    </div>
+    <div class="column">
+      <img src="Picture1.png" alt="AAA activity" class="image">
+      <h3>Mission Statement</h3>
+      <p>AAA empowers disabled youth to lead with confidence, clarity, and connection by fostering inclusive leadership and strong community ties.</p>
+      <iframe src="https://www.youtube.com/embed/EKBmK5kAcnc" allowfullscreen></iframe>
+    </div>
   </div>
-
-  <div>
-    <img src="Picture 1.png" alt="students together" class="image">
-    <img src="Image 2.webp" alt="students collaborating" class="image">
-
-    <h3>Vision Statement</h3>
-    <p>
-      We envision an Aotearoa where disabled youth are confident leaders, deeply connected to their communities, and empowered to shape a more inclusive future.
-    </p>
-  </div>
-</div>
 </section>
 
 <section>
-<div class="grid-4">
-  <img src="Picture10.jpg" alt="student using sign language" class="small-image">
-  <img src="Picture11.jpg" alt="students studying" class="small-image">
-  <img src="Picture12.jpg" alt="students talking" class="small-image">
-  <img src="Picture13.jpg" alt="student being taught" class="small-image">
-</div>
+  <div class="row">
+    <div class="column"><img src="Picture10.jpg" alt="student using sign language" class="small-image"></div>
+    <div class="column"><img src="Picture11.jpg" alt="students studying" class="small-image"></div>
+    <div class="column"><img src="Picture12.jpg" alt="students talking" class="small-image"></div>
+    <div class="column"><img src="Picture13.jpg" alt="student being taught" class="small-image"></div>
+  </div>
 </section>
 
-<section class="center">
-<a class="cta" onclick="document.getElementById('email1').style.display='block'">Join Now</a>
-<div id="email1" class="email-box">
-  <form action="mailto:accessallareas10@gmail.com" method="post">
-    <input type="email" placeholder="Your email" required>
-    <button type="submit">Send</button>
+<section>
+  <form onsubmit="return sendEmail(this)">
+    <input type="email" name="email" placeholder="Enter your email" required>
+    <button type="submit" class="cta">Support Disabled Students Now</button>
   </form>
-</div>
 </section>
 
 <section>
-<h2>Why This Matters: A Snapshot of Urgent Need</h2>
-
-<div class="grid-2">
-  <div>
-    <ul>
-      <li>Nearly half of disabled students report unmet needs in education</li>
-      <li>6 in 10 disabled students are bullied</li>
-      <li><strong>Disabled students are twice as likely to leave school with no qualifications</strong></li>
-      <li>Four times more likely to not be in education, employment, or training</li>
-      <li>Yet 72% of unemployed disabled adults want to work</li>
-    </ul>
-  </div>
-
-  <div>
-    <img src="Picture 3.jpg" alt="student left out of circle" class="image">
-  </div>
-</div>
+  <img src="Logo.png" alt="access all areas logo" class="logo">
+  <h1>Opening Every Door for Everyone</h1>
 </section>
 
 <section>
-<p>
-These outcomes are the result of environments that often fail to affirm and empower disabled identities.
-</p>
+  <h2>Why This Matters: A Snapshot of Urgent Need</h2>
+  <div class="row">
+    <div class="column align-quarter" style="justify-content:flex-start;">
+      <p>Nearly half of disabled students report unmet needs in education<br>
+      6 in 10 disabled students are bullied — one of the highest rates globally<br>
+      Disabled students are twice as likely to leave school with no qualifications<br>
+      Four times more likely to not be in education, employment, or training<br>
+      Yet 72% of unemployed disabled adults want to work</p>
+    </div>
+    <div class="column">
+      <img src="Picture3.jpg" alt="student left out of circle" class="image">
+    </div>
+  </div>
 </section>
 
 <section>
-<h2>Consequences of Exclusion</h2>
-
-<div class="grid-2">
-  <div>
-    <p><strong>Amelia:</strong> “I used to believe I wasn’t capable of much...”</p>
-    <img src="Picture6.jpg" class="image">
-
-    <p><strong>Isla:</strong> “Whenever I tried to talk about being disabled...”</p>
-    <img src="Picture8.jpg" class="image">
-  </div>
-
-  <div>
-    <img src="Picture7.jpg" class="image">
-    <p><strong>Kahu:</strong> “I kept pushing through like everything was fine...”</p>
-  </div>
-</div>
+  <p class="highlight-text">These outcomes are the result of environments that often fail to affirm and empower disabled identities.</p>
 </section>
 
 <section>
-<h2>Our Offer</h2>
-
-<div class="grid-2">
-  <div>
-    <img src="Logo.png" class="logo">
-    <img src="Picture15.jpg" class="image">
-
-    <p>
-      Empowering • Learning • Fostering
-    </p>
+  <h2>Consequences of exclusion</h2>
+  <div class="row">
+    <div class="column align-half">
+      <p>Amelia: "I used to believe I wasn’t capable of much, so I stopped dreaming big. No one ever told me my disability didn’t mean I had to lower my expectations."</p>
+      <img src="Picture6.jpg" alt="Student studying looking stressed" class="image">
+      <p>Isla: "Whenever I tried to talk about being disabled, it felt like people got awkward or defensive — so I just stopped bringing it up. But not talking about it made me feel invisible, even with my friends."</p>
+    </div>
+    <div class="column align-half">
+      <img src="Picture7.jpg" alt="student with their head on their hands studying" class="image">
+      <p>Kahu: "I kept pushing through like everything was fine because I didn’t want to be seen as the ‘difficult’ one. By the time I admitted I needed help, I was burnt out and barely holding it together."</p>
+      <img src="Picture8.jpg" alt="student sitting lonely on steps" class="image">
+    </div>
   </div>
-
-  <div>
-    <img src="Picture14 (logo 2).png" class="logo">
-    <p>
-      Supporting identity development<br>
-      Belonging to a shared cohort<br>
-      Inspiring through role models<br>
-      Equipping for life beyond school
-    </p>
-    <img src="Picture17.jpg" class="image">
-  </div>
-</div>
 </section>
 
 <section>
-<h2>Meet Sean Prenter</h2>
-
-<div class="grid-2">
-  <div>
-    <img src="Linkedin banner.jpg" class="image">
-    <iframe src="https://www.youtube.com/embed/wXBBoTr0kvU" allowfullscreen></iframe>
+  <div class="row">
+    <div class="column"><img src="Picture10.jpg" alt="student using sign language" class="small-image"></div>
+    <div class="column"><img src="Picture11.jpg" alt="students studying" class="small-image"></div>
+    <div class="column"><img src="Picture12.jpg" alt="students talking" class="small-image"></div>
+    <div class="column"><img src="Picture13.jpg" alt="student being taught" class="small-image"></div>
   </div>
-
-  <div>
-    <p>
-      Kia ora I’m Sean, the founder and program lead at Access All Areas (AAA). I live with a traumatic brain injury and have experienced firsthand the barriers disabled students face. My goal is simple: to give disabled students the tools they need to thrive with confidence, clarity, and connection.
-    </p>
-    <img src="Picture20.jpg" class="image">
-  </div>
-</div>
 </section>
 
 <section>
-<div class="grid-4">
-  <img src="Picture10.jpg" class="small-image">
-  <img src="Picture11.jpg" class="small-image">
-  <img src="Picture12.jpg" class="small-image">
-  <img src="Picture13.jpg" class="small-image">
-</div>
-</section>
-
-<section class="center">
-<a class="cta" onclick="document.getElementById('email2').style.display='block'">Join Now</a>
-<div id="email2" class="email-box">
-  <form action="mailto:accessallareas10@gmail.com" method="post">
-    <input type="email" placeholder="Your email" required>
-    <button type="submit">Send</button>
+  <form onsubmit="return sendEmail(this)">
+    <input type="email" name="email" placeholder="Enter your email" required>
+    <button type="submit" class="cta">Support Disabled Students Now</button>
   </form>
-</div>
+</section>
+
+<section>
+  <h2>Our Offer</h2>
+  <div class="row">
+    <div class="column align-half">
+      <img src="Logo.png" alt="access all areas logo" class="logo">
+      <img src="Picture15.jpg" alt="smiling students" class="image">
+      <p>Empowering: students to speak about their lived experience with clarity and access support with self-assurance</p>
+      <p>Learning: from disabled students, enabled by the trust and shared experience of a disabled youth facilitator</p>
+      <p>Fostering: a future where disabled students envision an empowered future.</p>
+    </div>
+    <div class="column align-half">
+      <img src="Picture14 (logo 2).png" alt="access all areas logo 2nd design" class="logo">
+      <p>Supporting: identity development through storytelling, reflection, and peer connection</p>
+      <p>Belonging: to a cohort of peers with a shared experience</p>
+      <p>Inspiring: students with visible role models which they can see their experience within</p>
+      <p>Equipping: students with tools and strategies to confidently navigate social, academic, and vocational spaces</p>
+      <img src="Picture17.jpg" alt="smiling students" class="image">
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="row">
+    <div class="column"><img src="Picture10.jpg" alt="student using sign language" class="small-image"></div>
+    <div class="column"><img src="Picture11.jpg" alt="students studying" class="small-image"></div>
+    <div class="column"><img src="Picture12.jpg" alt="students talking" class="small-image"></div>
+    <div class="column"><img src="Picture13.jpg" alt="student being taught" class="small-image"></div>
+  </div>
+</section>
+
+<section>
+  <form onsubmit="return sendEmail(this)">
+    <input type="email" name="email" placeholder="Enter your email" required>
+    <button type="submit" class="cta">Support Disabled Students Now</button>
+  </form>
 </section>
 
 </body>
