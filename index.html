@@ -6,6 +6,61 @@
 <title>Access All Areas</title>
 <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
 <style>
+  /* MOBILE ONLY */
+@media (max-width: 768px) {
+
+  .meet-sean {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  /* Make all rows stack */
+  .meet-sean .row {
+    display: contents;
+  }
+
+  /* Explicit mobile order */
+  .meet-header { order: 1; }
+  .banner { order: 2; }
+
+  .intro-text { order: 3; }
+  .intro-video { order: 4; }
+
+  .background-text { order: 5; }
+  .image-19 { order: 6; }
+
+  .lived-text { order: 7; }
+  .image-20 { order: 8; }
+
+  /* Ensure columns go full width */
+  .meet-sean .column {
+    width: 100%;
+  }
+
+  iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+  }
+}
+  @media (max-width: 768px) {
+
+  .consequences-row {
+    flex-direction: column;
+  }
+
+  .consequences-row .column {
+    display: contents;
+  }
+
+  .item-amelia { order: 1; }
+  .item-img-kahu { order: 2; }
+  .item-kahu { order: 3; }
+  .item-img-amelia { order: 4; }
+  .item-isla { order: 5; }
+  .item-img-isla { order: 6; }
+}
   /* Color palette using CSS variables */
   :root {
     --primary-bg: #F9F6F0;      /* overall page background */
@@ -324,22 +379,37 @@ section.articles-podcasts h2 {
   </div>
 </section>
 
-<!-- Consequences Section -->
-<section>
+<section class="consequences">
   <h2>Consequences of exclusion</h2>
-  <div class="row">
+
+  <div class="row consequences-row">
     <div class="column align-half">
-      <p>Amelia: "I used to believe I wasn’t capable of much, so I stopped dreaming big. No one ever told me my disability didn’t mean I had to lower my expectations."</p>
-      <img src="Picture6.jpg" alt="Student studying looking stressed" class="image">
-      <p>Isla: "Whenever I tried to talk about being disabled, it felt like people got awkward or defensive — so I just stopped bringing it up. But not talking about it made me feel invisible, even with my friends."</p>
+      <p class="item-amelia">
+        Amelia: "I used to believe I wasn’t capable of much, so I stopped dreaming big. No one ever told me my disability didn’t mean I had to lower my expectations."
+      </p>
+
+      <img src="Picture6.jpg" alt="Student studying looking stressed"
+           class="image item-img-amelia">
+
+      <p class="item-isla">
+        Isla: "Whenever I tried to talk about being disabled, it felt like people got awkward or defensive — so I just stopped bringing it up. But not talking about it made me feel invisible, even with my friends."
+      </p>
     </div>
+
     <div class="column align-half">
-      <img src="Picture7.jpg" alt="student with their head on their hands studying" class="image">
-      <p>Kahu: "I kept pushing through like everything was fine because I didn’t want to be seen as the ‘difficult’ one. By the time I admitted I needed help, I was burnt out and barely holding it together."</p>
-      <img src="Picture8.jpg" alt="student sitting lonely on steps" class="image">
+      <img src="Picture7.jpg" alt="student with their head on their hands studying"
+           class="image item-img-kahu">
+
+      <p class="item-kahu">
+        Kahu: "I kept pushing through like everything was fine because I didn’t want to be seen as the ‘difficult’ one. By the time I admitted I needed help, I was burnt out and barely holding it together."
+      </p>
+
+      <img src="Picture8.jpg" alt="student sitting lonely on steps"
+           class="image item-img-isla">
     </div>
   </div>
 </section>
+
   
 <section>
   <div class="four-image-row">
@@ -397,39 +467,19 @@ section.articles-podcasts h2 {
 </section>
 </section>
   
-  <!-- Meet Sean Prenter Section (Aligned to Site Styles) -->
-<section>
-  <!-- Logo row -->
-  <img src="Logo.png" alt="Access All Areas logo" class="logo" />
+<h2 class="meet-header">Meet Sean Prenter</h2>
+<img src="Linkedin banner.jpg" alt="Sean Prenter founder banner" class="image banner" />
 
-  <!-- Header + banner -->
-  <h2>Meet Sean Prenter</h2>
-  <img src="Linkedin banner.jpg" alt="Sean Prenter founder banner" class="image" />
-
-<style>
-  .centered-cell {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .small-image {
-    max-width: 160px;
-    height: auto;
-  }
-</style>
-
-<!-- Two-column layout -->
-<section>
+<section class="meet-sean">
   <!-- Row 1 -->
-  <div class="row">
-    <div class="column">
+  <div class="row row-intro">
+    <div class="column intro-text">
       <p>
-        Kia ora I’m Sean, the founder and program lead and facilitator at Access All Areas (AAA). I started AAA because I know what it’s like to navigate education and leadership as a disabled person, and how isolating and empowering that journey can be.
+           Kia ora I’m Sean, the founder and program lead and facilitator at Access All Areas (AAA). I started AAA because I know what it’s like to navigate education and leadership as a disabled person, and how isolating and empowering that journey can be.
       </p>
     </div>
 
-    <div class="column">
+    <div class="column intro-video">
       <iframe
         src="https://www.youtube.com/embed/wXBBoTr0kvU"
         title="Sean Prenter – Access All Areas"
@@ -439,38 +489,32 @@ section.articles-podcasts h2 {
   </div>
 
   <!-- Row 2 -->
-  <div class="row">
-    <div class="column centered-cell">
+  <div class="row row-background">
+    <div class="column image-19 centered-cell">
       <img src="Picture19.jpg" alt="Wooden figure climbing stairs" class="image medium-image" />
     </div>
 
-    <div class="column">
+    <div class="column background-text">
       <p>
-        I have a background in Philosophy, Politics and Economics (MA), and I’ve been involved in the disability sector for years—both personally and professionally. I co-founded and served as Co-President of the National Disabled Students’ Association, and I’ve served on disability charities and disabled person governance boards. I’ve had the privilege of representing Aotearoa New Zealand at events including the Pacific Disability Forum, Global Disability Summit, APEC, and UN events. At home, I have served on the boards of Your Way | Kia Roha, the Disabled Persons Assembly National Executive Committee, and the Wellington City Council Accessibility Advisory Group, and received the University of Otago Young Alumni Award.
+              I have a background in Philosophy, Politics and Economics (MA), and I’ve been involved in the disability sector for years—both personally and professionally. I co-founded and served as Co-President of the National Disabled Students’ Association, and I’ve served on disability charities and disabled person governance boards. I’ve had the privilege of representing Aotearoa New Zealand at events including the Pacific Disability Forum, Global Disability Summit, APEC, and UN events. At home, I have served on the boards of Your Way | Kia Roha, the Disabled Persons Assembly National Executive Committee, and the Wellington City Council Accessibility Advisory Group, and received the University of Otago Young Alumni Award.
       </p>
     </div>
   </div>
 
   <!-- Row 3 -->
-  <div class="row">
-    <div class="column">
+  <div class="row row-lived">
+    <div class="column lived-text">
       <p>
-        I live with a traumatic brain injury and have experienced the barriers that come with being disabled—barriers in communication, access, and attitudes, as well as the loneliness of being the only disabled person in the room. I have accessed over $30,000 in scholarships, yet I rarely see disabled people accessing these opportunities, and I want that to change. These experiences shape my passion for creating spaces where disabled students feel seen, supported, and set up to thrive. My goal is simple: to give disabled students and educators the tools they need to move through life with clarity, confidence, and connection.
+         I live with a traumatic brain injury and have experienced the barriers that come with being disabled—barriers in communication, access, and attitudes, as well as the loneliness of being the only disabled person in the room. I have accessed over $30,000 in scholarships, yet I rarely see disabled people accessing these opportunities, and I want that to change. These experiences shape my passion for creating spaces where disabled students feel seen, supported, and set up to thrive. My goal is simple: to give disabled students and educators the tools they need to move through life with clarity, confidence, and connection.
       </p>
     </div>
 
-    <div class="column">
+    <div class="column image-20">
       <img src="Picture20.jpg" alt="Students sitting in a circle on grass" class="image" />
     </div>
   </div>
 </section>
-  </div>
-<section style="text-align: center;">
-  <p>
-    <strong>
-      If you’re a student, an educator, or an ally, I would love to hear from you; together we can shape a more inclusive future for disabled students.
-    </strong>
-  </p>
+
 </section>
 <section>
   <div class="four-image-row">
@@ -481,8 +525,6 @@ section.articles-podcasts h2 {
   </div>
 </section>
 
-
-</section>
   <section>
   <form onsubmit="return sendEmail(this)">
     <input type="email" name="email" placeholder="Enter your email" required>
