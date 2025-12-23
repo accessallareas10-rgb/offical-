@@ -232,13 +232,6 @@ section.articles-podcasts h2 {
     max-width: 160px;
     height: auto;
   }
-  @media (max-width: 768px) {
-  .video-sean      { order: 1; }
-  .background-text { order: 2; }
-  .pic19           { order: 3; }
-  .tbi-text        { order: 4; }
-  .pic20           { order: 5; }
-}
 </style>
 <script>
   function toggleInsta() {
@@ -250,24 +243,6 @@ section.articles-podcasts h2 {
     window.location.href = `mailto:accessallareas10@gmail.com?subject=Support AAA&body=Please add me to your mailing list: ${email}`;
     return false;
   }
-  
-@media (max-width: 768px) {
-.meet-sean-mobile {
-display: flex;
-flex-direction: column;
-}
-.video-sean { order: 1; }
-.background-text { order: 2; }
-.pic19 { order: 3; }
-.tbi-text { order: 4; }
-.pic20 { order: 5; }
-/* hide desktop rows on mobile */
-.meet-sean-desktop {
-display: none;
-}
-.meet-sean-mobile {
-display: none;
-} 
 </script>
 </head>
 <body>
@@ -352,21 +327,18 @@ display: none;
 <!-- Consequences Section -->
 <section>
   <h2>Consequences of exclusion</h2>
-<div class="row">
-  <p class="amelia">
-    Amelia: "I used to believe I wasn’t capable of much, so I stopped dreaming big. No one ever told me my disability didn’t mean I had to lower my expectations."
-  </p>
-  <img src="Picture7.jpg" alt="student with their head on their hands studying" class="image pic7">
-  <p class="kahu">
-    Kahu: "I kept pushing through like everything was fine because I didn’t want to be seen as the ‘difficult’ one. By the time I admitted I needed help, I was burnt out and barely holding it together."
-  </p>
-  <img src="Picture6.jpg" alt="Student studying looking stressed" class="image pic6">
-  <p class="isla">
-    Isla: "Whenever I tried to talk about being disabled, it felt like people got awkward or defensive — so I just stopped bringing it up. But not talking about it made me feel invisible, even with my friends."
-  </p>
-  <img src="Picture8.jpg" alt="student sitting lonely on steps" class="image pic8">
-</div>
-
+  <div class="row">
+    <div class="column align-half">
+      <p>Amelia: "I used to believe I wasn’t capable of much, so I stopped dreaming big. No one ever told me my disability didn’t mean I had to lower my expectations."</p>
+      <img src="Picture6.jpg" alt="Student studying looking stressed" class="image">
+      <p>Isla: "Whenever I tried to talk about being disabled, it felt like people got awkward or defensive — so I just stopped bringing it up. But not talking about it made me feel invisible, even with my friends."</p>
+    </div>
+    <div class="column align-half">
+      <img src="Picture7.jpg" alt="student with their head on their hands studying" class="image">
+      <p>Kahu: "I kept pushing through like everything was fine because I didn’t want to be seen as the ‘difficult’ one. By the time I admitted I needed help, I was burnt out and barely holding it together."</p>
+      <img src="Picture8.jpg" alt="student sitting lonely on steps" class="image">
+    </div>
+  </div>
 </section>
   
 <section>
@@ -449,27 +421,6 @@ display: none;
 
 <!-- Two-column layout -->
 <section>
-  <div class="row meet-sean-mobile">
-  <iframe
-    class="video-sean"
-    src="https://www.youtube.com/embed/wXBBoTr0kvU"
-    title="Sean Prenter – Access All Areas"
-    allowfullscreen>
-  </iframe>
-
-  <p class="background-text">
-    I have a background in Philosophy, Politics and Economics (MA), and I’ve been involved in the disability sector for years—both personally and professionally...
-  </p>
-
-  <img src="Picture19.jpg" class="image pic19" alt="Wooden figure climbing stairs">
-
-  <p class="tbi-text">
-    I live with a traumatic brain injury and have experienced the barriers that come with being disabled...
-  </p>
-
-  <img src="Picture20.jpg" class="image pic20" alt="Students sitting in a circle on grass">
-</div>
-  <div class="meet-sean-desktop">
   <!-- Row 1 -->
   <div class="row">
     <div class="column">
@@ -480,11 +431,10 @@ display: none;
 
     <div class="column">
       <iframe
-  class="video-sean"
-  src="https://www.youtube.com/embed/wXBBoTr0kvU"
-  title="Sean Prenter – Access All Areas"
-  allowfullscreen>
-</iframe>
+        src="https://www.youtube.com/embed/wXBBoTr0kvU"
+        title="Sean Prenter – Access All Areas"
+        allowfullscreen>
+      </iframe>
     </div>
   </div>
 
@@ -583,3 +533,4 @@ display: none;
 
 </body>
 </html>
+
