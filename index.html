@@ -274,6 +274,27 @@ section h2 {
   margin: 0;
   line-height: 1.3;
 }
+  /* Force social icons to top-right and small */
+.header-top {
+  display: flex;
+  align-items: flex-start;      /* top alignment */
+  justify-content: space-between;
+}
+
+.social-icons img {
+  width: 26px;
+  height: auto;
+  max-width: none;
+  margin: 0;
+}
+
+.social-icons a {
+  display: inline-flex;
+  align-items: flex-start;
+}
+  .social-icons img {
+  width: 26px;
+}
 </style>
 <script>
   function toggleInsta() {
@@ -296,7 +317,7 @@ section h2 {
     <!-- Social icons on the right -->
     <div class="social-icons">
       <a href="https://www.instagram.com/sean_prenterr/" target="_blank" aria-label="Follow on Instagram">
-        <img src="Picture2.jpg" alt="Instagram icon">
+        <img src="Image 30.avif" alt="Instagram icon">
       </a>
 
       <a href="https://www.tiktok.com/@access_all_areas_" target="_blank" aria-label="Follow on TikTok">
