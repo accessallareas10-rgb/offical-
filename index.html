@@ -103,32 +103,6 @@
 section h2 {
   margin-bottom: 20px;
 }
-
-/* Individual section colors */
-section.who-are-we h2 {
-  color: #1B3B2F; /* deep green, strong and grounding */
-}
-
-section.why-this-matters h2 {
-  color: #A35D3D; /* warm bronze, draws attention */
-}
-
-section.consequences h2 {
-  color: #D95C5C; /* muted red, emphasizes seriousness */
-}
-
-section.our-offer h2 {
-  color: #3B5DA3; /* calm blue, trustworthy and uplifting */
-}
-
-section.meet-sean h2 {
-  color: #7B3BA3; /* rich purple, inspiring and distinctive */
-}
-
-section.articles-podcasts h2 {
-  color: #E6A23C; /* golden amber, highlights resources */
-}
-
   .highlight-section {
     text-align: center;
     background-color: var(--section-bg);
@@ -287,6 +261,19 @@ section.articles-podcasts h2 {
     max-width: 160px;
     height: auto;
   }
+  .section-title {
+  background-color: #F3F1EC;   /* warm neutral panel */
+  padding: 1.2rem 1.5rem;
+  margin: 2.5rem 0 1.5rem;
+  border-radius: 10px;
+}
+
+/* Typography stays unchanged */
+.section-title h1,
+.section-title h2 {
+  margin: 0;
+  line-height: 1.3;
+}
 </style>
 <script>
   function toggleInsta() {
@@ -318,14 +305,22 @@ section.articles-podcasts h2 {
     </div>
   </div>
 
+ <div class="section-title">
   <h1>Opening Every Door for Everyone</h1>
-  <h2>Equipping disabled students to lead boldly, with confidence, clarity, and connection.</h2>
-</header>
+</div>
+
+<div class="section-title">
+  <h2>
+    Equipping disabled students to lead boldly, with confidence, clarity, and connection.
+  </h2>
+</div>
 
 
 <!-- Who Are We Section -->
-<section>
+  <section>
+<div class="section-title">
   <h2>Who Are We</h2>
+</div>
   <div class="row">
     <div class="column">
       <p>Access All Areas (AAA) is a youth-led initiative dedicated to empowering disabled young people across Aotearoa New Zealand by partnering with schools. Founded by disabled youth, for disabled youth, AAA is grounded in lived experience and driven by a vision of inclusive leadership.</p>
@@ -366,8 +361,10 @@ section.articles-podcasts h2 {
 </section>
 
 <!-- Why This Matters -->
-<section>
+  <section>
+<div class="section-title">
   <h2>Why This Matters: A Snapshot of Urgent Need</h2>
+</div>
   <div class="row" style="align-items: center;"> <!-- added align-items: center -->
     <div class="column" style="display: flex; flex-direction: column; justify-content: center;">
       <ul>
@@ -384,8 +381,9 @@ section.articles-podcasts h2 {
   </div>
 </section>
 
-<section class="consequences">
+<div class="section-title">
   <h2>Consequences of exclusion</h2>
+</div></h2>
 
   <div class="row consequences-row">
     <div class="column align-half">
@@ -430,9 +428,12 @@ section.articles-podcasts h2 {
     <button type="submit" class="cta">Support Disabled Students Now</button>
   </form>
 </section>
+  
 <!-- Our Offer Section -->
 <section>
+  <div class="section-title">
   <h2>Our Offer: Accessing Futures</h2>
+</div>
   <div class="row">
     <div class="column align-half">
       <img src="Logo.png" alt="access all areas logo" class="logo">
@@ -473,8 +474,10 @@ section.articles-podcasts h2 {
 </section>
   
 
-
-<section class="meet-sean">
+<section>
+<div class="section-title">
+  <h2>Meet Sean Prenter</h2>
+</div>
     <img src="Logo.png" alt="access all areas logo" class="logo" style="margin-bottom: 20px;">
   <h2 class="meet-header">Meet Sean Prenter</h2>
 <img src="Linkedin banner.jpg" alt="Sean Prenter founder banner" class="image banner" />
@@ -540,6 +543,9 @@ section.articles-podcasts h2 {
 </section>
 <!-- Articles & Podcasts Section -->
 <section>
+  <div class="section-title">
+  <h2>Articles & Podcasts</h2>
+</div>
   <h2>Articles & Podcasts</h2>
   <div class="row">
     <div class="column">
