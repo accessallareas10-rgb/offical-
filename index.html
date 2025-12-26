@@ -276,11 +276,11 @@ section h2 {
   margin: 0;
   line-height: 1.3;
 }
-  /* Force social icons to top-right and small */
 .header-top {
   display: flex;
-  align-items: flex-start;      /* top alignment */
-  justify-content: space-between;
+  align-items: center;       /* vertical alignment */
+  justify-content: space-between;  /* logo left, social icons right */
+  gap: 20px;                 /* optional spacing between items */
 }
 
 .social-icons img {
@@ -296,6 +296,14 @@ section h2 {
 }
   .social-icons img {
   width: 34px;
+}
+  .header-text {
+  font-size: 1.5rem;       /* adjust as needed */
+  font-weight: 700;
+  color: #1B3B2F;          /* or whatever fits your palette */
+  margin: 0;               /* remove default h1 margin */
+  flex: 1;                 /* take up remaining space between logo and icons */
+  text-align: center;      /* optional: center between logo & icons */
 }
 </style>
 <script>
@@ -315,7 +323,7 @@ section h2 {
   <div class="header-top">
     <!-- Logo on the left -->
     <img src="Logo.png" alt="access all areas logo" class="logo">
-
+  <h1>Opening Every Door for Everyone</h1>
     <!-- Social icons on the right -->
     <div class="social-icons">
       <a href="https://www.instagram.com/sean_prenterr/" target="_blank" aria-label="Follow on Instagram">
@@ -327,11 +335,6 @@ section h2 {
       </a>
     </div>
   </div>
-
- <div class="section-title">
-  <h1>Opening Every Door for Everyone</h1>
-</div>
-
 <div class="section-title section-title--light">
   <h2>
     Equipping disabled students to lead boldly, with confidence, clarity, and connection.
