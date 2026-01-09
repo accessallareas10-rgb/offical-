@@ -1,10 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Why This Matters | Access All Areas</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
 <nav class="main-nav">
   <img src="Logo.png" alt="Access All Areas logo" class="nav-logo">
 
   <ul class="nav-links">
     <li><a href="index.html">Home</a></li>
     <li><a href="who-we-are.html">Who We Are</a></li>
-    <li><a href="why-this-matters.html">Why This Matters</a></li>
+    <li><a href="why-this-matters.html" aria-current="page">Why This Matters</a></li>
     <li><a href="our-offer.html">Our Offer</a></li>
     <li><a href="meet-sean.html">Meet Sean</a></li>
     <li><a href="articles-podcasts.html">Articles & Podcasts</a></li>
@@ -35,7 +48,7 @@
   </div>
 </section>
 
-<!-- CONSEQUENCES OF EXCLUSION -->
+<!-- CONSEQUENCES -->
 <section>
   <div class="section-title">
     <h2>Consequences of Exclusion</h2>
@@ -43,53 +56,34 @@
 
   <div class="row consequences-row">
     <div class="column align-half">
-      <p class="item-amelia">
-        Amelia: "I used to believe I wasn’t capable of much, so I stopped dreaming big.
-        No one ever told me my disability didn’t mean I had to lower my expectations."
-      </p>
-
-      <img src="Picture6.jpg" alt="Student studying looking stressed"
-           class="image item-img-amelia">
-
-      <p class="item-isla">
-        Isla: "Whenever I tried to talk about being disabled, it felt like people got
-        awkward or defensive — so I just stopped bringing it up. But not talking about
-        it made me feel invisible, even with my friends."
-      </p>
+      <p class="item-amelia">Amelia: "I used to believe I wasn’t capable of much…"</p>
+      <img src="Picture6.jpg" class="image item-img-amelia">
+      <p class="item-isla">Isla: "Whenever I tried to talk about being disabled…"</p>
     </div>
 
     <div class="column align-half">
-      <img src="Picture7.jpg" alt="student with their head on their hands studying"
-           class="image item-img-kahu">
-
-      <p class="item-kahu">
-        Kahu: "I kept pushing through like everything was fine because I didn’t want to
-        be seen as the ‘difficult’ one. By the time I admitted I needed help, I was
-        burnt out and barely holding it together."
-      </p>
-
-      <img src="Picture8.jpg" alt="student sitting lonely on steps"
-           class="image item-img-isla">
+      <img src="Picture7.jpg" class="image item-img-kahu">
+      <p class="item-kahu">Kahu: "I kept pushing through like everything was fine…"</p>
+      <img src="Picture8.jpg" class="image item-img-isla">
     </div>
   </div>
 </section>
 
-<!-- IMAGE STRIP -->
 <section>
   <div class="four-image-row">
-    <div class="img-col"><img src="Picture10.jpg" alt="student using sign language" class="small-image"></div>
-    <div class="img-col"><img src="Picture11.jpg" alt="students studying" class="small-image"></div>
-    <div class="img-col"><img src="Picture12.jpg" alt="students talking" class="small-image"></div>
-    <div class="img-col"><img src="Picture13.jpg" alt="student being taught" class="small-image"></div>
+    <div class="img-col"><img src="Picture10.jpg" class="small-image"></div>
+    <div class="img-col"><img src="Picture11.jpg" class="small-image"></div>
+    <div class="img-col"><img src="Picture12.jpg" class="small-image"></div>
+    <div class="img-col"><img src="Picture13.jpg" class="small-image"></div>
   </div>
 </section>
 
-<!-- SUPPORT FORM -->
 <section>
   <form onsubmit="return sendEmail(this)">
     <input type="email" name="email" placeholder="Enter your email" required>
-    <button type="submit" class="cta">
-      Support Disabled Students Now
-    </button>
+    <button type="submit" class="cta">Support Disabled Students Now</button>
   </form>
 </section>
+
+</body>
+</html>
