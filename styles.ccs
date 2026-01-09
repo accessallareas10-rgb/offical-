@@ -1,7 +1,10 @@
 /* ===============================
    CSS VARIABLES
 ================================ */
-:root {
+:root body {
+  background-color: red !important;
+}
+{
   --primary-bg: #F9F6F0;
   --section-bg: #E6F0E9;
   --column-bg: #FFF9F2;
