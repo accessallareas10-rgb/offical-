@@ -1,3 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Access All Areas</title>
+
+  <!-- Global styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
 <nav class="main-nav">
   <img src="Logo.png" alt="Access All Areas logo" class="nav-logo">
 
@@ -8,22 +21,37 @@
     <li><a href="our-offer.html">Our Offer</a></li>
     <li><a href="meet-sean.html">Meet Sean</a></li>
     <li><a href="articles-podcasts.html">Articles & Podcasts</a></li>
-    <li><a href="contact.html" class="nav-cta">Contact Us</a></li>
+    <li><a href="contact.html" class="nav-cta" aria-current="page">Contact Us</a></li>
   </ul>
 </nav>
-<section>
-  <div class="section-title">
-    <h2>Contact Us</h2>
-  </div>
 
-  <p>
-    We’d love to hear from schools, organisations, families, and supporters.
-  </p>
+<main>
 
-  <form onsubmit="return sendEmail(this)">
-    <input type="email" name="email" placeholder="Enter your email" required>
-    <button type="submit" class="cta">
-      Get in touch
-    </button>
-  </form>
-</section>
+  <section class="contact">
+    <div class="section-title">
+      <h2>Contact Us</h2>
+    </div>
+
+    <p>
+      We’d love to hear from schools, organisations, families, and supporters.
+    </p>
+
+    <form onsubmit="return sendEmail(this)">
+      <label for="contact-email" class="sr-only">Email address</label>
+      <input
+        id="contact-email"
+        type="email"
+        name="email"
+        placeholder="Enter your email"
+        required
+      >
+      <button type="submit" class="cta">
+        Get in touch
+      </button>
+    </form>
+  </section>
+
+</main>
+
+</body>
+</html>
