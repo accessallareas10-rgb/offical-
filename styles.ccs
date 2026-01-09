@@ -1,10 +1,10 @@
 /* ===============================
    CSS VARIABLES
 ================================ */
-:root body {
-  background-color: red !important;
-}
-{
+/* ===============================
+   CSS VARIABLES
+================================ */
+:root {
   --primary-bg: #F9F6F0;
   --section-bg: #E6F0E9;
   --column-bg: #FFF9F2;
@@ -12,6 +12,11 @@
   --footer-bg: #C4A35A;
   --accent: #A35D3D;
   --text: #1B3B2F;
+}
+
+/* Test red background */
+body {
+  background-color: red !important;
 }
 
 /* ===============================
