@@ -339,13 +339,18 @@ section h2 {
   }
   function sendEmail(form) {
     const email = form.email.value;
-    window.location.href = `mailto:accessallareas10@gmail.com?subject=Connecting with AAA&body=Please fill in the below: 
-    Name: 
-    Contact number: 
-    Student/Staff/Carer (delete those which do not apply) 
-    Accessing Futures/ Thriving Futures (delete those which do not apply) 
-    Message:`;
-    return false;
+window.location.href =
+  "mailto:accessallareas10@gmail.com" +
+  "?subject=Connecting%20with%20AAA" +
+  "&body=Please%20fill%20in%20the%20below:%0D%0A%0D%0A" +
+  "Name:%0D%0A" +
+  "Contact%20number:%0D%0A" +
+  "Student/Staff/Carer%20(delete%20those%20which%20do%20not%20apply)%0D%0A" +
+  "Accessing%20Futures/%20Thriving%20Futures%20(delete%20those%20which%20do%20not%20apply)%0D%0A" +
+  "Message:%0D%0A";
+
+return false;
+
   }
 </script>
 </head>
