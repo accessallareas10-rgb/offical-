@@ -16,9 +16,10 @@
   }
 
   /* Make all rows stack */
-  .meet-sean .row {
-    display: contents;
-  }
+ .meet-sean .row {
+  display: flex;
+  flex-direction: column;
+}
 
   /* Explicit mobile order */
   .meet-header { order: 1; }
@@ -51,8 +52,9 @@
   }
 
   .consequences-row .column {
-    display: contents;
-  }
+  display: flex;
+  flex-direction: column;
+}
 
   .item-amelia { order: 1; }
   .item-img-kahu { order: 2; }
@@ -397,7 +399,15 @@ section h2 {
   z-index: 1000;
   background: white;
   box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-} 
+}
+#our-offer .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#our-offer .column {
+  flex: 1;
+  min-width: 300px;
 }
 </style>
 <script>
