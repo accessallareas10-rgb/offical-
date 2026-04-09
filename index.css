@@ -359,9 +359,14 @@ section h2 {
   list-style: none;
   gap: 10px;
   flex-wrap: wrap;
-} html {
+  align-items: center;
+} 
+
+html {
   scroll-behavior: smooth;
-} section {
+} 
+
+section {
   scroll-margin-top: 120px;
 } 
 .main-nav a {
@@ -375,7 +380,7 @@ section h2 {
 
 .main-nav a:hover {
   background-color: #D4A373;
-  color: white;
+  color: rgb(207, 37, 37);
 }.main-nav {
   position: sticky;
   top: 0;
@@ -403,21 +408,69 @@ section h2 {
   flex-wrap: wrap;
   box-shadow: 0 2px 10px rgba(0,0,0,0.08);
 }
-  .main-nav a {
-  text-decoration: none;
+
+.main-nav a, .main-nav button {
+  background: none;
+  border: none;
   color: #1B3B2F;
+  font: inherit;
   font-weight: 600;
   padding: 8px 12px;
   border-radius: 6px;
+  cursor: pointer;
   transition: 0.3s;
 }
 
-.main-nav a:hover {
+.main-nav button:hover, .main-nav a:hover {
   background-color: #D4A373;
   color: white;
-  top: 0;
-  z-index: 1000;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  z-index: 2000;
+}
+
+.modal.hidden {
+  display: none;
+}
+
+.modal-card {
+  width: min(100%, 440px);
   background: white;
+  border-radius: 18px;
+  padding: 28px 24px;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.modal-close {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  border: none;
+  background: none;
+  font-size: 1.6rem;
+  color: #1B3B2F;
+  cursor: pointer;
+}
+
+.contact-modal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact-modal-form input[type="email"] {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
   box-shadow: 0 2px 10px rgba(0,0,0,0.08);
 }
 #our-offer .row {

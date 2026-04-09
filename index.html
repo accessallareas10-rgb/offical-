@@ -19,7 +19,6 @@
       <a href="https://www.instagram.com/sean_prenterr/" target="_blank" aria-label="Follow on Instagram">
         <img src="Picture 34.png" alt="Instagram icon">
       </a>
-
       <a href="https://www.tiktok.com/@access_all_areas_" target="_blank" aria-label="Follow on TikTok">
         <img src="tiktok-logo-tikok-icon-transparent-tikok-app-logo-free-png.png" alt="TikTok icon">
       </a>
@@ -38,12 +37,11 @@
     <li><a href="#our-offer">Our Offer</a></li>
     <li><a href="#meet-sean">Meet Sean</a></li>
     <li><a href="#articles">Articles & Podcasts</a></li>
-    <li><a href="contact.html" class="nav-cta">Contact Us</a></li>
+    <li><button type="button" id="open-contact-modal">Contact Us</button></li>
   </ul>
 </nav>
-</div>
 <!-- Who Are We Section -->
-  <section>
+<section>
 <div class="section-title">
   <h2>Who Are We</h2>
 </div>
@@ -62,7 +60,8 @@
     </div>
   </div>
 </section>
-  <section>
+
+<section>
   <div class="four-image-row">
     <div class="img-col"><img src="Picture10.jpg" alt="An over the shoulder shot of sign language with sign language usersin the background" class="small-image"></div>
     <div class="img-col"><img src="Picture11.jpg" alt="3 male students studying" class="small-image"></div>
@@ -70,6 +69,7 @@
     <div class="img-col"><img src="Picture13.jpg" alt="An over the shoulder shot of students sat at desks being taught by a teacher at the front desk" class="small-image"></div>
   </div>
 </section>
+
 <!-- Why This Matters -->
 <section id="why-this-matters">
 <div class="section-title">
@@ -118,7 +118,6 @@
     <div class="img-col"><img src="Picture13.jpg" alt="An over the shoulder shot of students sat at desks being taught by a teacher at the front desk" class="small-image"></div>
   </div>
 </section>
-<section>
   
 <!-- Our Offer Section -->
 <section id="our-offer">
@@ -159,7 +158,7 @@
 
 <section>
   <div class="four-image-row">
-<div class="img-col"><img src="Picture10.jpg" alt="An over the shoulder shot of sign language with sign language usersin the background" class="small-image"></div>
+    <div class="img-col"><img src="Picture10.jpg" alt="An over the shoulder shot of sign language with sign language usersin the background" class="small-image"></div>
     <div class="img-col"><img src="Picture11.jpg" alt="3 male students studying" class="small-image"></div>
     <div class="img-col"><img src="Picture12.jpg" alt="Disabled students smiling and talking" class="small-image"></div>
     <div class="img-col"><img src="Picture13.jpg" alt="An over the shoulder shot of students sat at desks being taught by a teacher at the front desk" class="small-image"></div>
@@ -260,14 +259,47 @@
 
 </section>
 
-<!-- Final Support Form -->
-<section>
-  <form onsubmit="return sendEmail(this)">
-    <label for="email">Enter your email</label>
-    <input id="email" type="email" name="email" placeholder="Enter your email" required>
-    <button type="submit" class="cta">Support Disabled Students Now</button>
-  </form>
+<section class="modal hidden" id="contact-modal" aria-hidden="true">
+  <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="contact-modal-title">
+    <button type="button" class="modal-close" id="contact-modal-close" aria-label="Close contact form">×</button>
+    <h2 id="contact-modal-title">Contact Us</h2>
+    <form onsubmit="return sendEmail(this)" class="contact-modal-form">
+      <label for="modal-email">Enter your email</label>
+      <input id="modal-email" type="email" name="email" placeholder="Enter your email" required>
+      <button type="submit" class="cta">Support Disabled Students Now</button>
+    </form>
+  </div>
 </section>
+
+<script>
+  const contactModal = document.getElementById('contact-modal');
+  const openContactModal = document.getElementById('open-contact-modal');
+  const closeContactModal = document.getElementById('contact-modal-close');
+
+  openContactModal.addEventListener('click', () => {
+    contactModal.classList.remove('hidden');
+    contactModal.setAttribute('aria-hidden', 'false');
+  });
+
+  closeContactModal.addEventListener('click', () => {
+    contactModal.classList.add('hidden');
+    contactModal.setAttribute('aria-hidden', 'true');
+  });
+
+  contactModal.addEventListener('click', (event) => {
+    if (event.target === contactModal) {
+      contactModal.classList.add('hidden');
+      contactModal.setAttribute('aria-hidden', 'true');
+    }
+  });
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && !contactModal.classList.contains('hidden')) {
+      contactModal.classList.add('hidden');
+      contactModal.setAttribute('aria-hidden', 'true');
+    }
+  });
+</script>
 
 </body>
 </html>
